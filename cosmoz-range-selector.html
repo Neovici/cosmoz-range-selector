@@ -1,0 +1,70 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-dropdown/iron-dropdown.html">
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="../cosmoz-autocomplete/cosmoz-autocomplete.html">
+<link rel="import" href="../cosmoz-i18next/cosmoz-i18next.html">
+
+<dom-module id="cosmoz-range-selector">
+	<template>
+		<style>
+			:host {
+				width: inherit;
+			}
+
+			#dropdown {
+				width: inherit;
+			}
+
+			.dropdown-content {
+				background-color: white;
+				line-height: 20px;
+				border-radius: 3px;
+				box-shadow: 0px 2px 6px #ccc;
+				padding: 10px;
+				overflow: initial !important;
+				/*width: calc(100% - 25px);*/
+			}
+		</style>
+
+		<paper-input
+			id="labelInput"
+			on-tap="toggle"
+			class="dropdown-trigger"
+			label="{{ label }}"
+			value="{{ labelValue }}">
+		</paper-input>
+		<iron-dropdown
+			id="dropdown"
+			vertical-align="top"
+			vertical-offset="50"
+			horizontal-align="left">
+			<div class="dropdown-content">
+				<paper-input
+					id="fromInput"
+					value="{{ fromValue }}"
+					label="{{ fromLabel }}"
+					type="{{ type }}"
+					min="{{ _minComputed }}"
+					max="{{ _maxComputed }}">
+				</paper-input>
+				<paper-input
+					id="toInput"
+					value="{{ toValue }}"
+					label="{{ toLabel }}"
+					type="{{ type }}"
+					min="{{ _minComputed }}"
+					max="{{ _maxComputed }}">
+				</paper-input>
+				<template is="dom-if" if="{{ _useListComputed }}">
+					<cosmoz-autocomplete
+						id="autocomplete"
+						items="{{ list }}"
+						placeholder="{{ listLabel }}"
+						hidden$="_listEmpty">
+					</cosmoz-autocomplete>
+				</template>
+			</div>
+		</iron-dropdown>
+	</template>
+	<script type="text/javascript" src="cosmoz-range-selector.js"></script>
+</dom-module>
