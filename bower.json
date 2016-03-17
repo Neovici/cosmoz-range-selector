@@ -20,7 +20,7 @@
     "polymer": "Polymer/polymer#^1.2.0",
     "iron-dropdown": "PolymerElements/iron-dropdown#~1.2.0",
     "paper-input": "PolymerElements/paper-input#~1.1.9",
-    "cosmoz-autocomplete": "Neovici/cosmoz-autocomplete",
+    "cosmoz-autocomplete": "Neovici/cosmoz-autocomplete#master",
     "cosmoz-i18next": "Neovici/cosmoz-i18next#master"
   },
   "devDependencies": {
