@@ -9,7 +9,7 @@
     "web-component",
     "polymer"
   ],
-  "main": "cosmoz-range-selector",
+  "main": "cosmoz-range-selector.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
