@@ -16,6 +16,9 @@
 			toLabel: {
 				type: String
 			},
+			label: {
+				type: String
+			},
 			min: {
 				type: Number
 			},
