@@ -17,9 +17,9 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0",
-    "iron-dropdown": "PolymerElements/iron-dropdown#~1.2.0",
-    "paper-input": "PolymerElements/paper-input#~1.1.9",
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-dropdown": "PolymerElements/iron-dropdown#^1.0.0",
+    "paper-input": "PolymerElements/paper-input#^1.0.0",
     "cosmoz-autocomplete": "Neovici/cosmoz-autocomplete#master",
     "cosmoz-i18next": "Neovici/cosmoz-i18next#master"
   },
