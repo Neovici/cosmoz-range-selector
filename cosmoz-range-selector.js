@@ -1,5 +1,3 @@
-/*global Polymer, _, Cosmoz, t*/
-
 (function () {
 	'use strict';
 
@@ -83,8 +81,9 @@
 			};
 		},
 		_valuesChanged: function (values) {
-			this.debounce('rangeChangedJob', function () {
-				this.fire('range-changed', {
+			var that = this;
+			that.debounce('rangeChangedJob', function () {
+				that.fire('range-changed', {
 					data: values
 				});
 			}, 200);
