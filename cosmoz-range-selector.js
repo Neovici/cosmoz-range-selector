@@ -53,6 +53,9 @@
 				notify: true,
 				computed: '_computeValues(fromValue, toValue)',
 				observer: '_valuesChanged'
+			},
+			listLabel: {
+				type: String
 			}
 		},
 		behaviors: [
